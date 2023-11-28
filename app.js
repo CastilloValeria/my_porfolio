@@ -6,8 +6,8 @@ const port=3000;
 
 const rutaMain=require('./routers/main.js')
 
-app.get("/",rutaMain)
-
+// app.get("/",rutaMain)
+app.use("/",rutaMain)
 app.use(express.static("public"));
 
 app.listen(port, ()=>{
